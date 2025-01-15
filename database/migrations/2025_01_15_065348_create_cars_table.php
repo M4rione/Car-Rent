@@ -16,6 +16,7 @@ return new class extends Migration
             $table->id();
             $table->foreignIdFor(User::class);
             $table->string('plate')->nullable();
+            $table->string('brand')->nullable();
             $table->enum('type', ['sedan', 'MPV', 'SUV'])->nullable();
             $table->string('capacity')->nullable();
             $table->string('price')->nullable();
